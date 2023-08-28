@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InicioActivity">
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Inicio"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="188dp"
+      tools:layout_editor_absoluteY="16dp" />
+
+  <Button
+      android:id="@+id/btnTraduccionIA"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="4dp"
+      android:text="Interprete con I.A."
+      app:layout_constraintBottom_toTopOf="@+id/btnParaSordos"
+      tools:layout_editor_absoluteX="16dp" />
+
+  <Button
+      android:id="@+id/btnParaSordos"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Para Sordos"
+      app:layout_constraintBottom_toTopOf="@+id/btnParaNormales"
+      tools:layout_editor_absoluteX="0dp" />
+
+  <Button
+      android:id="@+id/btnParaNormales"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Para Personas Normales"
+      app:layout_constraintBottom_toTopOf="@+id/btnDiccionario"
+      tools:layout_editor_absoluteX="0dp" />
+
+  <Button
+      android:id="@+id/btnDiccionario"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Diccionario"
+      app:layout_constraintBottom_toTopOf="@+id/btnSubir"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="0dp" />
+
+  <Button
+      android:id="@+id/btnSubir"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Subir"
+      app:layout_constraintBottom_toBottomOf="parent"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
